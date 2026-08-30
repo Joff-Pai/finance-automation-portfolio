@@ -1,0 +1,8 @@
+Field,Description,Type
+Date,Monthly reporting date,Date
+Country,Reporting country,Dimension
+Region,Geographical region,Dimension
+Business Unit,Operating business unit,Dimension
+Account,P&L account,Dimension
+Scenario,"Actual, Budget or Forecast",Scenario
+Amount EUR,Financial amount in EUR. Revenue and income are positive; costs are negative.,Measure
