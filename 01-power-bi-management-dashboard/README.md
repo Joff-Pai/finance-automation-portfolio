@@ -2,7 +2,7 @@
 
 Interactive Power BI dashboard designed to provide management with a consolidated view of financial performance across countries and business units.
 
-The dashboard focuses on Actual vs Budget vs Forecast analysis, profitability monitoring and variance analysis.
+The dashboard focuses on financial performance monitoring, Actual vs Budget analysis, profitability and variance analysis.
 
 ---
 
@@ -13,9 +13,8 @@ Management reporting often requires Finance teams to consolidate financial infor
 A management dashboard should allow Finance and business stakeholders to quickly answer questions such as:
 
 * Are we on track against Budget?
-* How is performance evolving compared with Forecast?
 * Which countries or business units are driving the variance?
-* Is EBITDA performance driven by revenue, costs or both?
+* How is financial performance evolving over time?
 * Where should management focus its attention?
 
 The objective is therefore not only to present financial data, but to transform it into actionable management information.
@@ -27,10 +26,10 @@ The objective is therefore not only to present financial data, but to transform 
 Build an interactive management P&L dashboard enabling Finance and management to:
 
 * monitor financial performance;
-* compare Actual, Budget and Forecast;
+* compare Actual results with Budget;
 * analyse revenue and profitability;
 * identify significant variances;
-* drill down by country and business unit;
+* analyse performance by country and business unit;
 * understand the main drivers of performance.
 
 ---
@@ -52,7 +51,7 @@ The solution combines:
 
 **Synthetic financial data → Data preparation → Data model → DAX measures → Interactive Power BI dashboard**
 
-The dashboard will provide management-level KPIs together with the ability to drill down into the underlying performance drivers.
+The dashboard provides management-level KPIs together with detailed variance analysis by country, business unit and reporting period.
 
 ---
 
@@ -92,21 +91,17 @@ The dataset covers:
 
 The dataset includes revenue and operating cost categories used to calculate Gross Profit and EBITDA.
 
-The dataset was generated using Python and validated before being used in Power BI.
+The dataset was generated using Python and validated before being imported into Power BI.
 
 ---
 
 ## 6. Key KPIs
 
-The dashboard will focus on the following management KPIs:
+The dashboard focuses on the following management KPIs:
 
 ### Revenue
 
 Total revenue generated across the selected reporting scope.
-
-### Gross Profit
-
-Revenue after material and production costs.
 
 ### EBITDA
 
@@ -116,17 +111,15 @@ Operating profitability before depreciation, amortisation, interest and taxes.
 
 EBITDA as a percentage of Revenue.
 
-### Actual vs Budget
+### Revenue Variance
 
-Absolute and percentage variance between Actual results and Budget.
+Absolute difference between Actual Revenue and Budget Revenue.
 
-### Actual vs Forecast
+### Revenue Variance %
 
-Absolute and percentage variance between Actual results and Forecast.
+Percentage variance between Actual Revenue and Budget Revenue.
 
-### YTD Performance
-
-Year-to-date financial performance based on the selected reporting period.
+The dashboard also supports filtering by year, country and business unit.
 
 ---
 
@@ -139,42 +132,51 @@ Executive-level view of financial performance.
 Main elements:
 
 * Revenue;
-* Gross Profit;
 * EBITDA;
 * EBITDA Margin;
-* Actual vs Budget;
-* Actual vs Forecast;
-* monthly performance trend.
+* Revenue vs Budget;
+* Revenue Variance by Country;
+* EBITDA Margin by Business Unit.
+
+The page is designed to provide a quick management overview of financial performance and highlight areas requiring further investigation.
 
 ### Page 2 — Variance Analysis
 
-Detailed analysis of performance deviations.
+Detailed analysis of Revenue deviations versus Budget.
 
 Analysis dimensions:
 
 * Country;
 * Business Unit;
-* P&L Account;
 * Month.
 
-The objective is to identify where the largest positive and negative variances occur.
+Main elements:
 
-### Page 3 — Business Unit Analysis
+* Actual Revenue;
+* Budget Revenue;
+* Revenue Variance;
+* Revenue Variance %;
+* Revenue Variance by Country;
+* Revenue Variance by Business Unit;
+* Monthly Revenue Variance.
 
-Detailed profitability analysis by business unit.
-
-Focus areas:
-
-* Revenue;
-* EBITDA;
-* EBITDA Margin;
-* Actual vs Budget;
-* monthly evolution;
-* comparison between business units.
+The objective is to identify where the largest positive and negative variances occur and how these variances evolve over time.
 
 ---
 
-## 8. Architecture
+## 8. Dashboard Screenshots
+
+### Management Overview
+
+![Management Overview](screenshots/management-overview.png)
+
+### Variance Analysis
+
+![Variance Analysis](screenshots/variance-analysis.png)
+
+---
+
+## 9. Architecture
 
 ```text
 Synthetic Financial Dataset
@@ -189,7 +191,7 @@ Synthetic Financial Dataset
     Power BI Data Model
           │
           ▼
-       DAX Measures
+      DAX Measures
           │
           ▼
    Management Dashboard
@@ -200,47 +202,63 @@ Synthetic Financial Dataset
 
 ---
 
-## 9. Tools & Technologies
+## 10. Tools & Technologies
 
 * Power BI
 * Power Query
 * DAX
 * Python
-* Excel / CSV
+* CSV
 
 Python is used to generate and validate the synthetic financial dataset.
 
+Power Query is used for data preparation and transformation.
+
 Power BI is used for data modelling, calculations, visualisation and management reporting.
 
----
-
-## 10. Key Insights
-
-*To be completed after the dashboard has been built and the analysis performed.*
-
-The final analysis will highlight the main financial performance drivers identified through the dashboard.
+DAX is used to create financial KPIs and variance measures.
 
 ---
 
-## 11. Business Impact
+## 11. Key Insights
 
-*To be completed after the dashboard has been built.*
+The dashboard highlights several important performance patterns in the synthetic dataset.
 
-The project will assess how the solution can improve:
+### Country performance
+
+France represents the largest negative Revenue variance versus Budget, at approximately **-€3.5M**.
+
+Austria also shows a negative variance of approximately **-€1.0M**, while Italy is approximately **-€0.5M** below Budget.
+
+Germany and Switzerland partially offset the negative performance, with positive variances of approximately **+€1.0M** and **+€0.65M** respectively.
+
+### Management interpretation
+
+The analysis demonstrates how a consolidated dashboard can quickly identify the main contributors to an overall Revenue variance.
+
+Rather than focusing only on the total result, management can identify **where performance is deteriorating, where positive performance is offsetting the decline, and which areas require further investigation**.
+
+---
+
+## 12. Business Impact
+
+This project demonstrates how a Power BI-based management reporting solution can improve:
 
 * management visibility;
 * variance analysis;
-* reporting efficiency;
 * identification of performance drivers;
+* reporting consistency;
 * decision-making.
+
+The key value of the solution is not the visualisation itself, but the ability to transform financial data into structured management information and support targeted performance discussions.
 
 ---
 
-## 12. Technical Details
+## 13. Technical Details
 
-Detailed technical documentation will cover:
+Detailed technical documentation covers:
 
-* data preparation;
+* data generation;
 * Power Query transformations;
 * data modelling;
 * DAX measures;
@@ -252,10 +270,10 @@ Technical details are intentionally presented after the business context to refl
 
 ---
 
-## 13. Data Disclaimer
+## 14. Data Disclaimer
 
 > **Synthetic financial dataset created for demonstration purposes.**
 
 No confidential, proprietary or client data is used in this project.
 
-The financial scenarios and figures are entirely fictional and have been created to demonstrate financial reporting, variance analysis and Business Intelligence capabilities.
+All financial scenarios and figures are entirely fictional and have been created to demonstrate financial reporting, variance analysis and Business Intelligence capabilities.
