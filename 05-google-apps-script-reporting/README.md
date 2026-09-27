@@ -150,8 +150,7 @@ The project demonstrates how automation can be used as a finance process improve
 
 ### Master Data
 
-![Master Data](screenshots/01-master-data.png)
-
+![Master Data](screenshots/01-recipients-master-data.png)
 ### Automated Distribution
 
 ![Automated Distribution](screenshots/02-automated-distribution.png)
