@@ -14,7 +14,7 @@ const TEST_MODE = true;
 const TEST_DATE = new Date(2026, 8, 7);
 
 // Test recipient
-const TEST_EMAIL = "joffrey.paille@skema.edu";
+const TEST_EMAIL = "const TEST_EMAIL = "test@example.com";
 
 
 /*************************************************
