@@ -6,9 +6,15 @@ Finance teams need reliable and timely analysis of revenue, accounts receivable 
 
 SQL can help Finance teams transform transaction-level financial data into structured management information while performing basic data quality checks.
 
-This project simulates an international industrial company using a synthetic financial dataset.
+This project simulates an international industrial company using a fully synthetic financial dataset.
 
-The focus is not on programming itself, but on using SQL as a tool for **financial analysis, data quality and management reporting**.
+The focus is not on programming itself, but on using **SQL as a Finance tool** for:
+
+* Financial analysis
+* Data quality
+* Receivables monitoring
+* Risk identification
+* Management reporting
 
 ---
 
@@ -23,23 +29,18 @@ The project aims to:
 * Build an accounts receivable aging analysis
 * Identify customer concentration
 * Highlight potential collection risks
+* Translate transactional data into management insights
 
 ---
 
 ## Solution
 
-A SQLite database was created with two main tables:
+A SQLite database was created using two main tables:
 
 * `customers`
 * `invoices`
 
-Five SQL scripts were developed:
-
-1. Data quality checks
-2. Revenue analysis
-3. Receivables analysis
-4. Aging analysis
-5. Management analysis
+Five SQL scripts were developed to progressively transform the transactional data into financial analysis.
 
 ### Architecture
 
@@ -89,53 +90,6 @@ This allows Finance to prioritise collection actions based on both **amount and 
 
 ---
 
-## Tools
-
-* SQLite
-* SQL
-* PowerShell
-* Git / GitHub
-
----
-
-## SQL Concepts Demonstrated
-
-The project uses:
-
-* `SELECT`
-* `WHERE`
-* `GROUP BY`
-* `ORDER BY`
-* `SUM`
-* `COUNT`
-* `CASE WHEN`
-* `JOIN`
-* Subqueries
-* Date functions
-* Data quality checks
-
----
-
-## Project Structure
-
-```text
-06-sql-financial-analysis/
-│
-├── README.md
-│
-├── data/
-│   └── financial_data.db
-│
-└── sql/
-    ├── 01_data_quality_checks.sql
-    ├── 02_revenue_analysis.sql
-    ├── 03_receivables_analysis.sql
-    ├── 04_aging_analysis.sql
-    └── 05_management_analysis.sql
-```
-
----
-
 ## Data Quality
 
 Before performing the financial analysis, basic validation checks were performed on the invoice dataset.
@@ -153,6 +107,8 @@ The following controls were implemented:
 This illustrates an important principle of financial reporting:
 
 > Reliable management information depends on reliable underlying data.
+
+![Data Quality Checks](screenshots/data-quality-checks.png)
 
 ---
 
@@ -191,30 +147,105 @@ Open receivables were classified into:
 
 This provides a practical view of collection risk and helps Finance prioritise follow-up actions.
 
+![Receivables Aging](screenshots/receivables-aging.png)
+
+---
+
+## Management Analysis
+
+The final analysis combines revenue, open receivables and the open receivables ratio by customer.
+
+This makes it possible to identify customers where a significant proportion of generated revenue remains unpaid.
+
+**Example:**
+
+Hexagone Services SAS:
+
+* Revenue: €218k
+* Open receivables: €153k
+* Open receivables ratio: 70.2%
+
+This type of analysis could support:
+
+* Collection prioritisation
+* Cash flow monitoring
+* Customer risk assessment
+* Working capital management
+* Management discussions
+
+![Management Analysis](screenshots/management-analysis.png)
+
 ---
 
 ## Management Perspective
 
-The project demonstrates how transactional financial data can be transformed into management information.
+The project demonstrates how transactional financial data can be transformed into actionable management information.
 
 A Financial Controller could use this type of analysis to:
 
 * Identify collection priorities
 * Monitor customer payment behaviour
-* Detect concentration risks
+* Detect customer concentration risks
 * Support cash flow monitoring
 * Challenge unusual receivables positions
 * Improve financial reporting quality
+* Support working capital discussions
 
-The objective is therefore not simply to query a database, but to:
+The objective is therefore not simply to query a database, but to transform:
 
 **Finance Data → Analysis → Risk Identification → Management Action**
 
 ---
 
-## Screenshots
+## Tools
 
-Screenshots demonstrating the SQL analysis will be added here.
+* SQLite
+* SQL
+* PowerShell
+* Git / GitHub
+
+---
+
+## SQL Concepts Demonstrated
+
+The project uses:
+
+* `SELECT`
+* `WHERE`
+* `GROUP BY`
+* `ORDER BY`
+* `SUM`
+* `COUNT`
+* `CASE WHEN`
+* `JOIN`
+* Subqueries
+* Date functions
+* Data quality checks
+
+---
+
+## Project Structure
+
+```text
+06-sql-financial-analysis/
+│
+├── README.md
+│
+├── data/
+│   └── financial_data.db
+│
+├── screenshots/
+│   ├── data-quality-checks.png
+│   ├── receivables-aging.png
+│   └── management-analysis.png
+│
+└── sql/
+    ├── 01_data_quality_checks.sql
+    ├── 02_revenue_analysis.sql
+    ├── 03_receivables_analysis.sql
+    ├── 04_aging_analysis.sql
+    └── 05_management_analysis.sql
+```
 
 ---
 
@@ -224,7 +255,17 @@ The database was created using SQLite.
 
 The SQL scripts are organised by financial analysis area to make the project easy to review and maintain.
 
-All calculations are based on a synthetic dataset created specifically for this portfolio.
+The analysis was performed directly on the SQLite database using SQL queries.
+
+The project demonstrates the ability to:
+
+1. Structure financial data
+2. Perform basic data validation
+3. Query transactional data
+4. Aggregate financial information
+5. Analyse receivables and aging
+6. Identify financial risks
+7. Translate data into management insights
 
 ---
 
