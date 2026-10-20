@@ -4,9 +4,9 @@
 
 Financial Controller with experience in **financial controlling, reporting, financial analysis, internal controls and process improvement** across international and industrial environments.
 
-My background combines **controlling, audit, credit analysis and finance operations**, giving me a strong understanding of financial performance, data quality, financial controls and reporting processes.
+My background combines **controlling, audit, credit analysis and finance operations**, providing a strong understanding of financial performance, data quality, financial controls and reporting processes.
 
-This portfolio demonstrates how **data, automation and Business Intelligence can be used to improve Finance processes, reporting quality and management decision-making**.
+This portfolio demonstrates how **data, automation and Business Intelligence can improve Finance processes, reporting quality and management decision-making**.
 
 > **Finance → Data → Automation → Reporting → Decision**
 
@@ -16,22 +16,22 @@ This portfolio demonstrates how **data, automation and Business Intelligence can
 
 My professional experience includes:
 
-* **Financial Controlling** in an international industrial environment
-* **Senior Financial Audit** across international companies and financial environments
-* **Financial Audit**
-* **Credit Analysis**
-* **Finance / Service Finance**
+- **Financial Controlling** in an international industrial environment
+- **Senior Financial Audit** across international companies and financial environments
+- **Financial Audit**
+- **Credit Analysis**
+- **Finance / Service Finance**
 
 This combination allows me to approach Finance processes from both a **business and control perspective**.
 
-My audit experience is used as an advantage in areas such as:
+My audit experience provides a strong foundation in:
 
-* Internal controls
-* Data quality
-* Risk identification
-* Process understanding
-* Reconciliation and validation
-* Variance analysis
+- Internal controls
+- Data quality
+- Risk identification
+- Process understanding
+- Reconciliation and validation
+- Variance analysis
 
 The objective is to combine this financial expertise with **data, automation and Business Intelligence** to improve Finance processes.
 
@@ -39,20 +39,21 @@ The objective is to combine this financial expertise with **data, automation and
 
 ## Core Finance Areas
 
-* Financial Controlling
-* Business Controlling
-* FP&A
-* Management Reporting
-* Budget & Forecast Analysis
-* Actual vs Budget / Forecast
-* Variance Analysis
-* Working Capital Management
-* Month-End Closing
-* Internal Controls
-* Financial Data Quality
-* Process Improvement
-* Finance Automation
-* Business Intelligence
+- Financial Controlling
+- Business Controlling
+- FP&A
+- Management Reporting
+- Budget & Forecast Analysis
+- Actual vs Budget / Forecast
+- Variance Analysis
+- Working Capital Management
+- Month-End Closing
+- Internal Controls
+- Financial Data Quality
+- Process Improvement
+- Finance Automation
+- Business Intelligence
+- Financial Data Analysis
 
 ---
 
@@ -70,31 +71,32 @@ The objective is to combine this financial expertise with **data, automation and
 
 **VBA · Google Apps Script · Process Automation**
 
-### Data
+### Data Analysis
 
-**SQL — currently developing**
+**SQL · SQLite**
 
 The technologies are used as **tools to solve Finance problems**, rather than as programming exercises in isolation.
 
 ---
 
-# Portfolio Projects
+## Portfolio Projects
 
 The portfolio focuses on **practical Finance use cases rather than programming exercises**.
 
-| #      | Project                                                                               | Finance Focus          | Business Objective                                                     | Main Tools                         |
-| ------ | ------------------------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------- | ---------------------------------- |
-| **01** | [**Management P&L Dashboard**](./01-power-bi-management-dashboard/)                   | Performance Management | Monitor financial performance and explain key variances                | Power BI · DAX · Power Query       |
-| **02** | [**Working Capital Dashboard**](./02-power-bi-working-capital/)                       | Cash & Working Capital | Identify where cash is tied up in operations                           | Power BI · DAX · Power Query       |
-| **03** | [**Automated Financial Reporting**](./03-automated-financial-reporting/)              | Reporting Automation   | Reduce manual reporting work and improve reporting consistency         | Excel · Power Query                |
-| **04** | [**Month-End Closing Automation**](./04-month-end-closing-automation/)                | Closing & Controls     | Automate closing processes and strengthen validation controls          | Excel · VBA · Power Query          |
-| **05** | [**Automated Management Reporting Distribution**](./05-google-apps-script-reporting/) | Process Automation     | Automate the distribution and tracking of recurring management reports | Google Apps Script · Google Sheets |
+| # | Project | Finance Focus | Business Objective | Main Tools |
+|---|---|---|---|---|
+| **01** | [Management P&L Dashboard](./01-power-bi-management-dashboard/) | Performance Management | Monitor financial performance and explain key variances | Power BI · DAX · Power Query |
+| **02** | [Working Capital Dashboard](./02-power-bi-working-capital/) | Cash & Working Capital | Identify where cash is tied up in operations | Power BI · DAX · Power Query |
+| **03** | [Automated Financial Reporting](./03-automated-financial-reporting/) | Reporting Automation | Reduce manual reporting work and improve reporting consistency | Excel · Power Query |
+| **04** | [Month-End Closing Automation](./04-month-end-closing-automation/) | Closing & Controls | Automate closing processes and strengthen validation controls | Excel · VBA · Power Query |
+| **05** | [Automated Management Reporting Distribution](./05-google-apps-script-reporting/) | Process Automation | Automate the distribution and tracking of recurring management reports | Google Apps Script · Google Sheets |
+| **06** | [SQL Financial Analysis](./06-sql-financial-analysis/) | Financial Data Analysis | Analyse revenue, outstanding invoices, receivables ageing and data quality | SQL · SQLite |
 
 ---
 
 ## Project Approach
 
-Each project follows the same Finance-oriented methodology:
+Each project follows the same Finance-oriented methodology.
 
 ### 1. Business Problem
 
@@ -132,17 +134,18 @@ Turn financial information into actionable insights for management.
 
 The projects are designed to demonstrate the ability to:
 
-* Translate financial requirements into practical solutions
-* Understand and structure financial data
-* Build management reporting
-* Analyse financial performance and variances
-* Automate repetitive Finance processes
-* Implement financial validation and control checks
-* Improve reporting efficiency and data quality
-* Combine financial knowledge with Business Intelligence
-* Use technology to support Finance rather than technology for its own sake
+- Translate financial requirements into practical solutions
+- Understand and structure financial data
+- Build management reporting
+- Analyse financial performance and variances
+- Automate repetitive Finance processes
+- Implement financial validation and control checks
+- Improve reporting efficiency and data quality
+- Analyse transactional financial data using SQL
+- Combine financial knowledge with Business Intelligence
+- Use technology to support Finance rather than technology for its own sake
 
-The portfolio therefore focuses on the intersection of:
+The portfolio focuses on the intersection of:
 
 **Financial Controlling + Data + Automation + Business Intelligence**
 
@@ -152,11 +155,11 @@ The portfolio therefore focuses on the intersection of:
 
 All financial datasets used in this portfolio are **synthetic datasets created for demonstration purposes**.
 
-No confidential, proprietary, company-specific or client data is used.
+No confidential, proprietary, company-specific or client data is intentionally included.
 
-The projects are designed to demonstrate financial and technical capabilities while respecting professional confidentiality requirements.
+The projects demonstrate financial and technical capabilities while respecting professional confidentiality requirements.
 
-> **Synthetic financial datasets created for demonstration purposes.**
+> Synthetic financial datasets created for demonstration purposes.
 
 ---
 
@@ -186,7 +189,7 @@ The objective of this portfolio is to demonstrate how a Finance professional can
 
 **Decision support**
 
-This approach reflects my professional interest in:
+This approach reflects my professional interests in:
 
 **Financial Controlling · Business Controlling · FP&A · Financial Reporting · Finance Transformation**
 
